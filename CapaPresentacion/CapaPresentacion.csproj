@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{825F3195-AFEF-4551-A67F-C1807D6DC835}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaPresentacion</RootNamespace>
+    <AssemblyName>CapaPresentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsDetalle_Alumno.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDetalle_Alumno.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmprendedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmprendedores.Designer.cs">
+      <DependentUpon>FrmEmprendedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBecas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBecas.Designer.cs">
+      <DependentUpon>FrmBecas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCambiarDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCambiarDatos.Designer.cs">
+      <DependentUpon>FrmCambiarDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDetallesAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDetallesAlumno.Designer.cs">
+      <DependentUpon>FrmDetallesAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListaAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaAlumnos.Designer.cs">
+      <DependentUpon>FrmListaAlumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManual.Designer.cs">
+      <DependentUpon>FrmManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPermisos.Designer.cs">
+      <DependentUpon>FrmPermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPracticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPracticas.Designer.cs">
+      <DependentUpon>FrmPracticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportes.Designer.cs">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSeguro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSeguro.Designer.cs">
+      <DependentUpon>FrmSeguro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmServicio.Designer.cs">
+      <DependentUpon>FrmServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmDetalleAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmDetalleAlumno.Designer.cs">
+      <DependentUpon>frmDetalleAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmLista_Alumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmLista_Alumnos.Designer.cs">
+      <DependentUpon>FrmLista_Alumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmLista_Becarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmLista_Becarios.Designer.cs">
+      <DependentUpon>frmLista_Becarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmLista_Emprendedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmLista_Emprendedores.Designer.cs">
+      <DependentUpon>frmLista_Emprendedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmLista_Permisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmLista_Permisos.Designer.cs">
+      <DependentUpon>frmLista_Permisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmLista_Practicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmLista_Practicas.Designer.cs">
+      <DependentUpon>frmLista_Practicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmLista_Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmLista_Reportes.Designer.cs">
+      <DependentUpon>frmLista_Reportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmLista_Seguro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmLista_Seguro.Designer.cs">
+      <DependentUpon>frmLista_Seguro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmLista_Servicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmLista_Servicio.Designer.cs">
+      <DependentUpon>frmLista_Servicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistaAlumnosBecas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistaAlumnosBecas.Designer.cs">
+      <DependentUpon>vistaAlumnosBecas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistaAlumnosEmprendedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistaAlumnosEmprendedores.Designer.cs">
+      <DependentUpon>vistaAlumnosEmprendedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistaAlumnosPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistaAlumnosPermisos.Designer.cs">
+      <DependentUpon>vistaAlumnosPermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistaAlumnosReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistaAlumnosReportes.Designer.cs">
+      <DependentUpon>vistaAlumnosReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistaAlumnosSeguroSocial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistaAlumnosSeguroSocial.Designer.cs">
+      <DependentUpon>vistaAlumnosSeguroSocial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistaPracticasProfesionales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistaPracticasProfesionales.Designer.cs">
+      <DependentUpon>vistaPracticasProfesionales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistaServicioSocial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistaServicioSocial.Designer.cs">
+      <DependentUpon>vistaServicioSocial.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmEmprendedores.resx">
+      <DependentUpon>FrmEmprendedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBecas.resx">
+      <DependentUpon>FrmBecas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCambiarDatos.resx">
+      <DependentUpon>FrmCambiarDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDetallesAlumno.resx">
+      <DependentUpon>FrmDetallesAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaAlumnos.resx">
+      <DependentUpon>FrmListaAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManual.resx">
+      <DependentUpon>FrmManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPermisos.resx">
+      <DependentUpon>FrmPermisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPracticas.resx">
+      <DependentUpon>FrmPracticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportes.resx">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSeguro.resx">
+      <DependentUpon>FrmSeguro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmServicio.resx">
+      <DependentUpon>FrmServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmDetalleAlumno.resx">
+      <DependentUpon>frmDetalleAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmLista_Alumnos.resx">
+      <DependentUpon>FrmLista_Alumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmLista_Becarios.resx">
+      <DependentUpon>frmLista_Becarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmLista_Emprendedores.resx">
+      <DependentUpon>frmLista_Emprendedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmLista_Permisos.resx">
+      <DependentUpon>frmLista_Permisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmLista_Practicas.resx">
+      <DependentUpon>frmLista_Practicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmLista_Reportes.resx">
+      <DependentUpon>frmLista_Reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmLista_Seguro.resx">
+      <DependentUpon>frmLista_Seguro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmLista_Servicio.resx">
+      <DependentUpon>frmLista_Servicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptDetalle_Alumno.rdlc" />
+    <EmbeddedResource Include="Reportes\rptListaAlumnos.rdlc" />
+    <EmbeddedResource Include="Reportes\rptLista_Becarios.rdlc" />
+    <EmbeddedResource Include="Reportes\rptLista_emprendedores.rdlc" />
+    <EmbeddedResource Include="Reportes\rptLista_Permisos.rdlc" />
+    <EmbeddedResource Include="Reportes\rptLista_Practicas.rdlc" />
+    <EmbeddedResource Include="Reportes\rptLista_Reportes.rdlc" />
+    <EmbeddedResource Include="Reportes\rptLista_Seguro.rdlc" />
+    <EmbeddedResource Include="Reportes\rptLista_Servicio.rdlc" />
+    <EmbeddedResource Include="vistaAlumnosBecas.resx">
+      <DependentUpon>vistaAlumnosBecas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistaAlumnosEmprendedores.resx">
+      <DependentUpon>vistaAlumnosEmprendedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistaAlumnosPermisos.resx">
+      <DependentUpon>vistaAlumnosPermisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistaAlumnosReportes.resx">
+      <DependentUpon>vistaAlumnosReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistaAlumnosSeguroSocial.resx">
+      <DependentUpon>vistaAlumnosSeguroSocial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistaPracticasProfesionales.resx">
+      <DependentUpon>vistaPracticasProfesionales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistaServicioSocial.resx">
+      <DependentUpon>vistaServicioSocial.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dsDetalle_Alumno.xsc">
+      <DependentUpon>dsDetalle_Alumno.xsd</DependentUpon>
+    </None>
+    <None Include="dsDetalle_Alumno.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDetalle_Alumno.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsDetalle_Alumno.xss">
+      <DependentUpon>dsDetalle_Alumno.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar imagen.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaNegocios\CapaNegocios.csproj">
+      <Project>{97869d05-1630-4dc4-b76c-5b313391a90c}</Project>
+      <Name>CapaNegocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconoImagen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajuste1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\informacion1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayuda1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnNuevoActivo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnGuardarActivo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEditarActivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCancelarActivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEliminarActivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnVerDetalles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnVerDetalles1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnImprimir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnImprimir1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnImprimir2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundlogin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnRegresar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnInicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAtras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAtras1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

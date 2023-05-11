@@ -1,0 +1,65 @@
+# Visual Studio files
+.vs/
+bin/
+obj/
+
+# User-specific files and directories
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Oo]bj/
+
+# NuGet Packages
+*.nupkg
+packages/
+*.nuget.targets
+*.paket.repos
+**/packages/*
+!**/packages/*.nupkg
+*.lock.json
+*.exe
+*.msi
+*.7z
+*.ps1
+*.zip
+*.vsix
+*.pkg
+*.mpack
+
+# Other
+*.Cache.vch
+ClientBin/
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.log
+*.dll
+*.idb
+*.opendb
+*.VC.opendb
+ipch/
+*.dbmdl
+*.dbproj.schemaview
+*.sln.ide
+
